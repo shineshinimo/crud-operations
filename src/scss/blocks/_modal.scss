@@ -1,0 +1,78 @@
+.modal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #FEAF00 0%, #F8D442 100%);
+
+  &__content {
+    padding: 44px 30px;
+    margin: 0 30px;
+    width: 475px;
+    background-color: $color-white;
+    border-radius: 20px;
+  }
+
+  &__heading {
+    margin: 0 0 43px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    border-left: 6px solid $color-yellow;
+    padding-left: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 9px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__descr {
+    text-align: center;
+    margin: 0 0 50px;
+    font-size: 14px;
+    color: $color-grey;
+
+    @include vp-767 {
+      margin-bottom: 30px;
+    }
+
+    &--mod {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $color-grey;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__btn {
+    background-color: $color-orange;
+    padding: 14px;
+    color: $color-white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &__link {
+    color: $color-orange;
+    text-decoration: underline;
+  }
+}

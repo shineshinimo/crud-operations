@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Crud sign</title>
+</head>
+
+<body>
+  <section class="modal">
+    <div class="modal__content">
+      <h1 class="modal__heading">
+        CRUD OPERATIONS
+      </h1>
+
+      <h2 class="modal__title">
+        SIGN IN
+      </h2>
+
+      <p class="modal__descr">
+        Enter your credentials to access your account
+      </p>
+
+      <form id="signUpForm" action="#" class="modal__form">
+        <div class="modal__box">
+          <label for="inputMail" class="modal__label">Email</label>
+          <input id="inputMail" name="inputMail" type="email" class="modal__input input" placeholder="Enter your email">
+        </div>
+
+        <div class="modal__box">
+          <label for="inputPassword" class="modal__label">Password</label>
+          <input id="inputPassword" name="inputPassword" type="email" class="modal__input input"
+            placeholder="Enter your password">
+        </div>
+
+        <button type="submit" class="modal__btn" id="authBtn">
+          SIGN IN
+        </button>
+
+        <p class="modal__descr modal__descr--mod">
+          Don't Have an Account?
+          <a href="./register.html" class="modal__link">Register</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

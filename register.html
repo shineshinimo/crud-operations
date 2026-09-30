@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Crud register</title>
+</head>
+
+<body>
+  <section class="modal">
+    <div class="modal__content">
+      <h1 class="modal__heading">
+        CRUD OPERATIONS
+      </h1>
+
+      <h2 class="modal__title">
+        Register
+      </h2>
+
+      <p class="modal__descr">
+        Enter your details to create your account
+      </p>
+
+      <form id="registerForm" action="#" class="modal__form">
+        <div class="modal__box">
+          <label for="inputName" class="modal__label">Firstname</label>
+          <input id="inputName" name="inputName" type="text" class="modal__input input"
+            placeholder="Enter your password">
+        </div>
+
+        <div class="modal__box">
+          <label for="inputLastName" class="modal__label">Lastname</label>
+          <input id="inputLastName" name="inputLastName" type="text" class="modal__input input"
+            placeholder="Enter your lastname">
+        </div>
+
+        <div class="modal__box">
+          <label for="inputMail" class="modal__label">Email</label>
+          <input id="inputMail" name="inputMail" type="email" class="modal__input input" placeholder="Enter your email">
+        </div>
+
+        <div class="modal__box">
+          <label for="inputPassword" class="modal__label">Password</label>
+          <input id="inputPassword" name="inputPassword" type="email" class="modal__input input"
+            placeholder="Enter your password">
+        </div>
+
+        <div class="modal__box">
+          <input id="inputRepeatPassword" name="inputRepeatPassword" type="email" class="modal__input input"
+            placeholder="Repeat your password">
+        </div>
+
+        <button type="submit" class="modal__btn" id="authBtn">
+          Register
+        </button>
+
+        <p class="modal__descr modal__descr--mod">
+          Already have an account?
+          <a href="./sign-up.html" class="modal__link">Sign in</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
